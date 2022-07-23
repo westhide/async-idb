@@ -1,8 +1,13 @@
 {
   "name": "async-idb",
-  "private": true,
+  "private": false,
   "version": "0.1.0",
   "type": "module",
+  "author": "westhide",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/westhide/async-idb.git"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
