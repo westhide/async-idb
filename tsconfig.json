@@ -1,20 +1,53 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "useDefineForClassFields": true,
-    "module": "ESNext",
-    "lib": ["ESNext", "DOM"],
-    "moduleResolution": "Node",
-    "strict": true,
-    "sourceMap": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "esModuleInterop": true,
-    "noEmit": true,
+    // Type Checking
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noImplicitReturns": true,
+    "strict": true,
+
+    // Modules
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+
+    // Emit
+    "downlevelIteration": true,
+    //"importHelpers": true, // if set true,will cause tslib cannot find when use Class decorator
+    "removeComments": true,
+    "sourceMap": true,
+
+    // JavaScript Support
+    // Editor Support
+
+    // Interop Constraints
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+
+    // Language and Environment
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "jsx": "preserve",
+    "lib": ["esnext", "dom"],
+    "target": "esnext",
+    "useDefineForClassFields": true,
+
+    // Compiler Diagnostics
+    // Projects
+    // Output Formatting
+
+    // Completeness
     "skipLibCheck": true
+
+    // Command Line
+    // Watch Options
   },
   "include": ["src"]
 }
