@@ -1,11 +1,11 @@
-import type { AsyncWrapper, RequestMethodReturn } from "./useIndexedDB/type";
+import type { AsyncWrapper, RequestMethodReturn } from "./useIndexedDB";
 import {
   isArray,
   isFunction,
   indexedDBPreset,
   transformRequestToPromise,
   asyncWrapper,
-} from "./useIndexedDB/index";
+} from "./useIndexedDB";
 
 interface Index {
   name: string;
