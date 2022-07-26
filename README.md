@@ -3,7 +3,7 @@ Async-idb
 </h1>
 
 <p align="center">
-An <strong>async style, easy to use, fully typed</strong> indexedDB library
+An <strong>tiny, async, easy to use, fully typed</strong> indexedDB library
 <p>
 
 ## Features
@@ -47,6 +47,7 @@ const idb = new IndexedDB(
     },
     ...
   ],
+  // eventlistener to indexedDB open request
   events: {
     onsuccess() {/*  */},
     onupgradeneeded() {/*  */},
